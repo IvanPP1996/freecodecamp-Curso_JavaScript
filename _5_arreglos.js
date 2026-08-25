@@ -50,8 +50,40 @@ console.log(miArreglo[2][0]); */
 // Metodos en los arreglos --------------------------------------------------
 
 // Agregar un elemento al final del arreglo
-var estaciones =["Invierno", "Otoño", "Primavera"];
+/* var estaciones =["Invierno", "Otoño", "Primavera"];
 console.log(estaciones);
 // Usando metodos (metodo push)
 estaciones.push("Verano");
+console.log(estaciones); */
+
+// Agregar un elemento al principio del arreglo
+/* var estaciones =["Invierno", "Otoño", "Primavera", "Verano"];
+// Usando metodos (metodo unshift)
+estaciones.unshift("Nueva temporada");
+console.log(estaciones) */
+
+
+// Quitar un elemento al final del arreglo
+/* var estacion;
+var estaciones =["Invierno", "Otoño", "Primavera"];
+// Usando metodos (metodo pop)
+estacion = estaciones.pop();
 console.log(estaciones);
+console.log(estacion); */
+
+// Quitar un elemento al principio del arreglo
+/* var estaciones =["Invierno", "Otoño", "Primavera", "Verano"];
+// Usando metodos (metodo shift)
+estaciones.shift();
+console.log(estaciones); */
+
+// Ejercicio con arreglos --------------------------------------------------
+
+var miListaDeCompras = [["Cereal", 3],["Leche", 2],["Galletas", 4],["Pan", 5],["Refresco", 7],["Pollo", 7]];
+
+console.log("Voy a comprar " + miListaDeCompras[0][1] + " unidades de " + miListaDeCompras[0][0] + ".");
+console.log("Voy a comprar " + miListaDeCompras[1][1] + " unidades de " + miListaDeCompras[1][0] + ".");
+console.log("Voy a comprar " + miListaDeCompras[2][1] + " unidades de " + miListaDeCompras[2][0] + ".");
+console.log("Voy a comprar " + miListaDeCompras[3][1] + " unidades de " + miListaDeCompras[3][0] + ".");
+console.log("Voy a comprar " + miListaDeCompras[4][1] + " unidades de " + miListaDeCompras[4][0] + ".");
+console.log("Voy a comprar " + miListaDeCompras[5][1] + " unidades de " + miListaDeCompras[5][0] + ".");
