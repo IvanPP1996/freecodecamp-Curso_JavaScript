@@ -101,3 +101,14 @@ console.log(`Antes: ${JSON.stringify(arr)}`); // Para mostrar como un arreglo
 console.log(proximoEnFila(arr, 6));
 
 console.log(`Después: ${JSON.stringify(arr)}`); // Para mostrar como un arreglo */
+
+// Patron de retorno en funciones ---------------------------------------------------
+
+/* function calcularraizCuadrada(num) {
+    if (num < 0) {
+        return undefined;
+    }
+    return Math.sqrt(num);
+};
+
+console.log(calcularraizCuadrada(25)); */
