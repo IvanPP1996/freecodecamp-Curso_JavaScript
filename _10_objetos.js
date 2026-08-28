@@ -1,11 +1,11 @@
 // Objetos -----------------------------------------------------------
 
 var miPerro = {
-    "nombre": "Gino",
-    "edad": 5,
-    "peso": 6,
-    "raza": "Beagle",
-    5: "Grande"
+    nombre: "Gino",
+    edad: 5,
+    peso: 6,
+    raza: "Beagle",
+    5: "Grande",
 };
 
 // Acceder a propiedades notación punto ------------------------------
@@ -51,16 +51,15 @@ console.log(mochilla.contenido); */
 // Agregar a propiedades ---------------------------------------------
 
 var curso = {
-    "titulo": "Aprende javaScript desde cero",
-    "idioma": "español",
-    "duracion": 30
+    titulo: "Aprende javaScript desde cero",
+    idioma: "español",
+    duracion: 30,
 };
 
 // console.log(curso);
 curso.vistas = 34500;
 // console.log(curso);
 // console.log(curso.vistas);
-
 
 // console.log(curso);
 curso["usuarios"] = 45;
@@ -109,8 +108,8 @@ delete curso["idioma"];
     
     console.log(elementosQuimicos.hasOwnProperty("CL"));
     console.log(elementosQuimicos.hasOwnProperty("O")); */
-    
-    function verificarPropiedad (obj, propiedad) {
+
+/* function verificarPropiedad (obj, propiedad) {
         if (obj.hasOwnProperty(propiedad)) {
             return `Propiedad ${obj[propiedad]}`
         } else {
@@ -124,6 +123,61 @@ delete curso["idioma"];
         "precio": 4.56
     };
     
-    console.log(verificarPropiedad(miCuaderno, "precio"));
+    console.log(verificarPropiedad(miCuaderno, "precio")); */
 
-    // Objetos complejos ----------------------------------------------
+// Objetos complejos ----------------------------------------------
+
+/* var ordenesPizzas = [
+    {
+        "tipo": "margarita",
+        "tamanio": "individual",
+        "precio": 5.67,
+        "toppings": ["extra queo", "champiñones", "piña"],
+        "paraLlevar": true
+    },
+    {
+        "tipo": "cuatro quesos",
+        "tamanio": "familiar",
+        "precio": 18.34,
+        "toppings": ["extra queso", "pimenton"],
+        "paraLlevar": false
+    },
+    {
+        "tipo": "napolitana",
+        "tamanio": "individual",
+        "precio": 6.68,
+        "toppings": [],
+        "paraLlevar": true
+    }
+];
+
+console.log(ordenesPizzas[1].tipo);
+console.log(ordenesPizzas[1]["precio"]);
+console.log(ordenesPizzas[1]["toppings"]);
+
+console.log(ordenesPizzas[2].precio); */
+
+// Objetos anidados -----------------------------------------------
+
+function objetosAnidados() {
+
+    var mireceta = {
+        "descripcion": "mi postre favorito",
+        "costo": 15.6,
+        "ingredientes": {
+            "masa": {
+                "harina": "100grs",
+                "sal": "1 cucharadita",
+                "agua": "1 taza"
+            },
+            "cobertura": {
+                "azucar": "120 grs",
+                "chocolate": "4 cucharadas",
+                "mantequilla": "200 grs"
+            }
+        }
+    }
+    console.log(mireceta.ingredientes.cobertura.mantequilla);
+};
+
+objetosAnidados();
